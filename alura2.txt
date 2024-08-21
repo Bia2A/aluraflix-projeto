@@ -1,0 +1,57 @@
+const  avanca  =  document . querySelectorAll ( '.btn-proximo' ) ;
+
+avanca . forEach ( botão  =>  {
+    botão . addEventListener ( 'clique' ,  função ( ) {
+        const  atual  =  documento . querySelector ( '.ativo' ) ;
+        const  proximoPasso  =  'passo-'  +  this . getAttribute ( 'data-proximo' ) ;
+
+        atual . lista de classes . remover ( 'ativo' ) ;
+        documento . getElementById ( proximoPasso ) . classList . add ( 'ativo' ) ;
+onst  avanca  =  document . querySelectorAll ( '.btn-proximo' ) ;
+
+avanca . forEach ( botão  =>  {
+    botão . addEventListener ( 'clique' ,  função ( ) {
+        const  atual  =  documento . querySelector ( '.ativo' ) ;
+        const  proximoPasso  =  'passo-'  +  this . getAttribute ( 'data-proximo' ) ;
+
+        atual . lista de classes . remover ( 'ativo' ) ;
+        documento . getElementById ( proximoPasso ) . classList . add ( 'ativo' ) ;
+    } )
+} )
+ 33 alterações: 33 adições e 0 exclusões33 
+estilo.css
+Número da linha do arquivo original	Número da linha de diferença	Mudança de linha diferencial
+@@ -0,0 +1,33 @@
+corpo {
+    cor de fundo :  # 1D4221 ;
+    cor : branco;
+    família de fontes :  "Bai Jamjuree" , sem serifa;
+    exibição : flex;
+    justificar-conteúdo : centro;
+    alinhar-itens : centro;
+    altura :  700 px ;
+    margem :  0 ;
+}
+
+botão {
+    cor de fundo :  # 64A712 ;
+    cor : branco;
+    família de fontes :  "Bai Jamjuree" , sem serifa;
+}
+
+. passo {
+    exibição : nenhuma;
+}
+
+. passo . ativo {
+    exibir : bloco;
+}
+
+principal {
+    alinhamento de texto : centralizar;
+    largura máxima :  90 % ;
+}
+
+imagem {
+    largura máxima :  90 % ;
+}
